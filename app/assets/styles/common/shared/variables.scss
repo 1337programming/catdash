@@ -1,0 +1,128 @@
+//## Font, line-height, and color for body text, headings, and more.
+$font-family-sans-serif: Arial, "Helvetica Neue", Helvetica, sans-serif;
+$font-family-grotesk: "Tele-Grotesk", sans-serif;
+
+$font-size-base: 16px;
+$line-height: 24px;
+
+$font-size-lead: 18px;
+$font-size-p: 16px;
+$font-size-small: 14px;
+$font-size-xsmall: 12px;
+$font-size-legal: 10px;
+$font-size-btns: 18px;
+$font-size-bl: 12px;
+
+// Headlines
+$font-size-h1: 60px;
+$font-size-h2: 54px;
+$font-size-h3: 40px;
+$font-size-h4: 32px;
+$font-size-h5: 26px;
+$font-size-h6: 24px;
+
+//768
+$font-size-h2-768: 42px;
+$font-size-h3-768: 32px;
+$font-size-h4-768: 28px;
+$font-size-h5-768: 24px;
+$font-size-h6-768: 24px;
+
+//320
+$font-size-h1-below-768: 44px;
+$font-size-h2-below-768: 32px;
+$font-size-h3-below-768: 28px;
+$font-size-h4-below-768: 24px;
+$font-size-h5-below-768: 20px;
+$font-size-h6-below-768: 20px;
+
+$font-size-lead-below-768: 16px;
+$font-size-base-below-768: 14px;
+$font-size-p-below-768: 14px;
+$font-size-small-below-768: 12px;
+$font-size-xsmall-below-768: 11px;
+
+//Breakpoints
+$screen-xs: "(max-width: 767px)";
+$screen-xs-only: "(max-width: 599px)";
+$screen-small-tablet: "(min-width: 600px) and (max-width: 767px)";
+$screen-sm: "(min-width: 768px) and (max-width: 991px)";
+$screen-sm-rd: "(min-width: 768px) and (max-width: 1023px)";
+$screen-md: "(min-width: 992px) and (max-width: 1199px)";
+$screen-lg: "(min-width: 1200px)";
+
+$screen-sm-upper: "(min-width: 768px)";
+$screen-md-upper: "(min-width: 992px)";
+$screen-md-upper-rd: "(min-width: 1092px)";
+$screen-md-upper-tab-landscape: "(min-width: 1024px)";
+$screen-small-mobile: "(min-width: 320px) and (max-width: 480px)";
+$screen-md-lower: "(max-width: 991px)";
+
+//Color palette
+$brand-magenta: #E20074; //Use this for links and interactive components.
+$dark-magenta: #BA0060; //Reserved for hover states. Use it sparingly.
+$very-dark-magenta: #A10053; //Reserved for hover states on brand magenta backgrounds.
+$green: #09B119; //Used as a discrete accent for informative feedback which isn�t priority.
+$red: #FF0000;
+
+// Greys scale
+$black: #000000;
+$gray-darker: #323232;
+$gray-dark: #5A5A5A; // Standard body copy
+$gray: #767676;
+$gray-light: #BEBEBE;
+$gray-lighter: #F0F0F0;
+$white: #FFFFFF;
+
+$link-hover: $dark-magenta; // Links hover state
+$link-disabled: $gray-light;
+$blade-border: $gray;
+$item-border: $gray;
+$gray-background: $gray-light;
+
+//Font-size
+$lighter: 100; // Same as say: font-family: "Tele-GroteskNor";
+$normal: 200; // Same as say: font-family: "Tele-GroteskHal";
+$bold: 300; // Same as say: font-family: "Tele-GroteskFet";
+$bolder: 500; // Same as say: font-family: "Tele-GroteskUlt";
+
+// For image path location
+$common-path: "app"; // usage background: url("${common-path}/img/img.jpg")
+$common-path-pages: "app/styles"; // This is used to point the common folder but for the CSS used in the pages
+
+// For icon image path location
+$jump-logo-path: "#{$common-path}/images/jump/jump-logo.png";
+$mega-icon-sprite: "#{$common-path}/images/mega-icon-sprite.png";
+$icons-sprite-path: "#{$common-path}/images/icons/Rebellion_SpriteSheet_v8.png";
+$t-icon-logo-position: -189px -72px;
+
+// Spacing variables
+$spacing-xs: 5px;
+$spacing-sm: 10px;
+$spacing-md: 15px;
+$spacing-lg: 20px;
+$spacing-xl: 35px;
+$spacing-xxl: 50px;
+
+//buttons
+$btn-sm-width: 210px;
+
+//display properties
+$inline: inline-block;
+
+// TODO: Check if the following is needed:
+
+//margin iterations
+$spacing-iterations: 60;
+$button-margin: 24px;
+
+//Rep-dash margin-bottom
+$rd-spacing-iterations: 42;
+//Rep-dash margin-bottom for follow-up-details
+$rd-md-iterations: 10, 15, 17, 19, 24, 29, 42, 144;
+
+//Custom variables for module specific LESS files (Need it in order to compile LESS files)
+$min-px: 1px;
+$mid-px: 3px;
+$max-px: 5px;
+$xl-px: 10px;

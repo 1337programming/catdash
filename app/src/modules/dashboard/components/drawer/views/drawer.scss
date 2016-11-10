@@ -1,0 +1,17 @@
+.ui-panelmenu-icon {
+  display: none;
+}
+
+.sidebar {
+  padding: 0px;
+  background-color: #373a3c;
+}
+
+.active {
+  background-color: #cfd8dc;
+  transform: scale(1.1);
+}
+.inactive {
+  background-color: #eee;
+  transform: scale(1);
+}

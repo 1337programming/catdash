@@ -1,0 +1,30 @@
+{
+  "name": "rx-extensions",
+  "description": "rx-extensions",
+  "version": "0.1.1",
+  "license": "MIT",
+  "dependencies": {
+    "rxjs": "^5.0.0-rc.1"
+  },
+  "devDependencies": {
+    "@types/chai": "^3.4.34",
+    "@types/es6-collections": "^0.5.29",
+    "@types/es6-promise": "0.0.32",
+    "@types/mocha": "^2.2.32",
+    "chai": "^3.5.0",
+    "gulp": "^3.9.1",
+    "gulp-mocha-phantomjs": "^0.12.0",
+    "gulp-util": "^3.0.7",
+    "mirror-server": "0.0.7",
+    "mocha": "^3.1.2",
+    "ts-loader": "^0.9.5",
+    "typescript": "^2.0.6",
+    "webpack": "^1.13.3"
+  },
+  "scripts": {
+    "compile-tests": "gulp compile-tests",
+    "typings-tests": "typings install",
+    "test-server": "mirror-server --port 3000",
+    "test": "npm run compile-tests && gulp tests"
+  }
+}

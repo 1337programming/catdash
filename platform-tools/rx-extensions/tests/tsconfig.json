@@ -1,0 +1,31 @@
+{
+	"compilerOptions": {
+		"target": "es5",
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"allowSyntheticDefaultImports": true,
+		"sourceMap": true,
+		"typeRoots": [
+			"../node_modules/@types"
+		],
+		"strictNullChecks": false,
+		"lib": [
+			"dom",
+			"es6"
+		],
+		"types": [
+			"chai",
+			"mocha"
+		]
+	},
+	"exclude": [
+		"../node_modules"
+	],
+	"compileOnSave": false,
+	"buildOnSave": false,
+	"atom": {
+		"rewriteTsconfig": false
+	}
+}

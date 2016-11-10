@@ -1,0 +1,8 @@
+// WEBPACK BUILD TIME VARIABLES
+declare const WEBPACK_PROD: boolean;
+declare const WEBPACK_APIENDPOINT: string;
+
+export const SETTINGS = {
+  API_ENDPOINT: WEBPACK_APIENDPOINT,
+  PROD: WEBPACK_PROD
+};

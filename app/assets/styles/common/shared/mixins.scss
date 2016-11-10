@@ -1,0 +1,151 @@
+//Vertical Mixin
+@mixin vertical-center() {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+//Opacity
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+//rounded
+@mixin rounded($radius: 2px) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+//Margin /* Added missing variables Starts */
+@mixin m-top($px) {
+  margin-top: $px;
+}
+
+@mixin m-right($value) {
+  margin-right: $value;
+}
+
+@mixin m-left($value) {
+  margin-right: $value;
+}
+
+@mixin m-bottom($value) {
+  margin-right: $value;
+}
+
+//vertical-center-abs
+@mixin vertical-center-abs() {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+}
+
+@mixin bordered($top-color: #EEE, $right-color: #EEE, $bottom-color: #EEE, $left-color: #EEE) {
+  border-top: solid 1px $top-color;
+  border-left: solid 1px $left-color;
+  border-right: solid 1px $right-color;
+  border-bottom: solid 1px $bottom-color;
+}
+
+@mixin m-tb-0() {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@mixin m-b-0() {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@mixin box-shadow($arguments) {
+  -webkit-box-shadow: $arguments;
+  -moz-box-shadow: $arguments;
+  box-shadow: $arguments;
+}
+
+@mixin transitionAll($duration:0.2s, $ease:ease-out) {
+  -webkit-transition: all $duration $ease;
+  -moz-transition: all $duration $ease;
+  -o-transition: all $duration $ease;
+  transition: all $duration $ease;
+}
+
+@mixin transition($arguments...) {
+  -webkit-transition: $arguments;
+  -moz-transition: $arguments;
+  -o-transition: $arguments;
+  transition: $arguments;
+}
+
+//Pixel Sixe
+@mixin px-size($font-size-parameter) {
+  font-size: $font-size-parameter * 1px;
+}
+
+//Calc
+@mixin calc($property, $expression) {
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: calc(#{$expression});
+}
+
+//Mixin Keyframes
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+  @-ms-keyframes #{$animation-name} {
+    @content;
+  }
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+//Mixin Animaition
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};
+}
+
+/* FONTS */
+/* Legacy Mixins */
+@mixin drop-shadow($x-axis: 0, $y-axis: 1px, $blur: 2px, $alpha: 0.1) {
+  -webkit-box-shadow: $x-axis $y-axis $blur rgba(0, 0, 0, $alpha);
+  -moz-box-shadow: $x-axis $y-axis $blur rgba(0, 0, 0, $alpha);
+  box-shadow: $x-axis $y-axis $blur rgba(0, 0, 0, $alpha);
+}
+
+@mixin m-top($px) {
+  margin-top: $px;
+}
+
+@mixin m-bottom($px) {
+  margin-bottom: $px;
+}
+
+@mixin m-right($px) {
+  margin-right: $px;
+}
+
+@mixin m-left($px) {
+  margin-left: $px;
+}
+
+@mixin inner-column($base, $columns) {
+  width: 100% / $base * $columns;
+}
